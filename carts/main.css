@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Open+Sans:wght@500;600&family=Poppins:wght@500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    line-height: unset;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: gray;
+}
+.box-container {
+    padding: 50px;
+}
+.box {
+    margin-top: 50px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+.input input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.title {
+    font-size: 17px;
+    font-weight: 700;
+}
+.des {
+    font-size: 13px;
+    color: gray;
+    margin: 5px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.type {
+    color: orangered;
+    font-weight: 600;
+}
+.plus,
+.minus {
+    background-color: rgb(217, 217, 217);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.content {
+    list-style: none;
+    text-align: center;
+}
+.group .info {
+    width: 50%;
+    display: inline-block;
+}
+.input {
+    width: 25%;
+}
+.image {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.total-price {
+    width: 200px;
+}
+.pagination li,
+.group-pagination button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+.pagination li.hidden {
+    background-color: orangered;
+}
+.price {
+    width: 25%;
+}
+.group {
+    width: 50%;
+    height: 150px;
+}
+.cart-list {
+    border: 1px solid rgb(201, 201, 201);
+    padding: 10px;
+    border-radius: 5px;
+}
+.loading-indicator {
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    background-color: rgb(255, 68, 0);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+.loading-indicator.active {
+    display: flex;
+}
